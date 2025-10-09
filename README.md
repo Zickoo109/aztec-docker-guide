@@ -70,9 +70,6 @@ Save it somewhere for later use.
 ## 3. Enable Firewall and Open Ports  
 
 ```bash
-# Install UFW
-sudo apt install -y ufw
-
 # Firewall rules
 sudo ufw allow 22
 sudo ufw allow ssh
