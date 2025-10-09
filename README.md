@@ -119,7 +119,7 @@ COINBASE=0xYourAddress
 P2P_IP=Your-IP-Address
 ```
 ### Replace the following variables before saving:
-- **ETHEREUM_RPC_URL & BEACON_URL** → use `http://localhost:8545` (Sepolia) and `http://localhost:3500` (Beacon) if you are hosting your own RPC  
+- **ETHEREUM_RPC_URL & BEACON_URL** → use `http://localhost:8545` (Sepolia) and `http://localhost:3500` (Beacon) if you are hosting your own RPC and Aztec node on same server
 - **VALIDATOR_PRIVATE_KEYS** → Your EVM wallet private key starting with `0x...`  
 - **COINBASE** → Your EVM wallet public address starting with `0x...`  
 - **P2P_IP** → Your server IPv4
