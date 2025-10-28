@@ -114,6 +114,7 @@ CONSENSUS_BEACON_URL=Beacon-RPC
 VALIDATOR_PRIVATE_KEYS=0xYourPrivateKey
 COINBASE=0xYourAddress
 P2P_IP=Your-IP-Address
+GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS=0xDCd9DdeAbEF70108cE02576df1eB333c4244C666
 ```
 ### Replace the following variables before saving:
 - **ETHEREUM_RPC_URL & BEACON_URL** → use `http://localhost:8545` (Sepolia) and `http://localhost:3500` (Beacon) if you are hosting your own RPC and Aztec node on same server
@@ -136,6 +137,7 @@ services:
     image: aztecprotocol/aztec:2.0.2
     restart: unless-stopped
     environment:
+      GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS: ${GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS}
       ETHEREUM_HOSTS: ${ETHEREUM_RPC_URL}
       L1_CONSENSUS_HOST_URLS: ${CONSENSUS_BEACON_URL}
       DATA_DIRECTORY: /data
