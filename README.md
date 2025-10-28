@@ -134,7 +134,7 @@ services:
   aztec-node:
     container_name: aztec-sequencer
     network_mode: host
-    image: aztecprotocol/aztec:2.0.2
+    image: aztecprotocol/aztec:2.0.4
     restart: unless-stopped
     environment:
       GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS: ${GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS}
