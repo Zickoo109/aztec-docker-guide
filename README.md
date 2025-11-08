@@ -134,7 +134,7 @@ services:
   aztec-node:
     container_name: aztec-sequencer
     network_mode: host
-    image: aztecprotocol/aztec:2.0.4
+    image: aztecprotocol/aztec:2.1.2
     restart: unless-stopped
     environment:
       GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS: ${GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS}
@@ -169,7 +169,7 @@ docker compose logs -fn 1000
 cd aztec && docker compose down -v
 ```
 
-
+##for Node update: Refer to `https://github.com/Zickoo109/AZTEC-NODE-UPDATE`
 
 
 
