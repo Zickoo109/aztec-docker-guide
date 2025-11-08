@@ -169,7 +169,7 @@ docker compose logs -fn 1000
 cd aztec && docker compose down -v
 ```
 
-##for Node update: Refer to `https://github.com/Zickoo109/AZTEC-NODE-UPDATE`
+## for Node update: Refer to https://github.com/Zickoo109/AZTEC-NODE-UPDATE
 
 
 
